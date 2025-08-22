@@ -13,7 +13,7 @@ public class BinPacking {
             new Tile(3, 2, 1),
             new Tile(4, 4, 1)
         };
-        // Container grid
+
         int[][] container = new int[containerH][containerW];
         int currRow = 0, currCol = 0;
         for (Tile t : tiles) {
@@ -27,7 +27,7 @@ public class BinPacking {
                 currCol += t.width;
             }
         }
-        // Print packed container
+    
         for (int[] row : container) {
             for (int val : row)
                 System.out.print(val + " ");
