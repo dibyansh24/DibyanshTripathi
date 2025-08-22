@@ -17,7 +17,7 @@ public class RoomTiling {
                 if (placed) break;
             }
         }
-        // Print room filled
+        
         for (int[] r : room) {
             for (int cell : r) System.out.print(cell + " ");
             System.out.println();
