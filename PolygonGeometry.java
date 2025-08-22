@@ -1,5 +1,4 @@
 public class PolygonGeometry {
-    // Point class as static inner class
     static class Point {
         double x, y;
         Point(double x, double y) { this.x = x; this.y = y; }
@@ -16,7 +15,6 @@ public class PolygonGeometry {
     }
 
     public static void main(String[] args) {
-        // Example: Square
         Point[] poly = {
             new Point(0,0),
             new Point(1,0),
@@ -24,6 +22,5 @@ public class PolygonGeometry {
             new Point(0,1)
         };
         System.out.println("Polygon Area: " + computeArea(poly));
-        // Add more vector-based operations as needed
     }
 }
